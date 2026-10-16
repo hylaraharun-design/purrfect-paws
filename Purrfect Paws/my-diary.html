@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Diary</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>My Personal Diary 📔</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ambiance.html">Ambiance</a>
+        <a href="breeds.html">Breeds</a>
+        <a href="care.html">Care & Water</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="diary.html">My Diary</a>
+    </nav>
+</header>
+
+<section class="content">
+
+    <h2>About Me ♡</h2>
+
+    <div class="card" style="max-width:600px;margin:auto;">
+
+        <img
+            id="myPhoto"
+            src="images/myphoto.jpeg"
+            alt="My photo"
+            style="width:200px;height:200px;object-fit:cover;border-radius:50%;margin:auto;"
+        >
+
+        <br>
+
+        <label for="photoUpload">Upload Your Photo:</label>
+
+        <input
+            type="file"
+            id="photoUpload"
+            accept="image/*"
+        >
+
+        <h3>My Biodata</h3>
+
+        <p><strong>Name:</strong></p>
+        <input type="text" id="HYLARA LEA A/P HARUN" placeholder="HYLARA LEA A/P HARUN">
+
+        <p><strong>Age:</strong></p>
+        <input type="text" id="19" placeholder="19">
+
+        <p><strong>Hobbies:</strong></p>
+        <input type="text" id="WATCHING NETFLIX" placeholder="WATCHING NETFLIX">
+
+        <p><strong>About Me:</strong></p>
+
+        <textarea
+            id="myBio"
+            rows="6"
+            placeholder="I'M STUDENT KPTM IPOH AND I'M STUDYING COURSE DIGITAL BUSINESS."
+            style="width:100%;padding:10px;"
+        ></textarea>
+
+        <br><br>
+
+        <button onclick="saveDiary()">Save My Diary</button>
+
+        <p id="message"></p>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Purrfect Paws 🐾</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

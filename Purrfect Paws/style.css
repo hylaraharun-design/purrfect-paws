@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #423832;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f4d8c6;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #a7654d;
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #423832;
+    font-weight: bold;
+    padding: 8px;
+}
+
+nav a:hover {
+    color: #d47b61;
+}
+
+.hero {
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.hero h2 {
+    font-size: 35px;
+    color: #a7654d;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.hero img {
+    width: 90%;
+    max-width: 550px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #7b9277;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #596e55;
+}
+
+.content {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px #00000010;
+}
+
+.card a {
+    color: #b66e55;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #7b9277;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+.home-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%;
+}
+
+.home-video iframe {
+    border-radius: 15px;
+}
